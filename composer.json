@@ -30,6 +30,6 @@
     }
   },
   "extra": {
-    "contao-manager-plugin": "Ulpr\\ContaoFeMmImportBundle\\ContaoManager\\Plugin",
+    "contao-manager-plugin": "Ulpr\\ContaoFeMmImportBundle\\ContaoManager\\Plugin"
   }
 }
