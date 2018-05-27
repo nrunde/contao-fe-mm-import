@@ -34,9 +34,8 @@ class FeMmImport extends \ContentElement
      */
     protected function genFeOutput()
     {
-        if (\Contao\Input::post('FORM_SUBMIT') == 'EASYFORM') {
-            $this->Template->firstname  = \Contao\Input::post('firstname');
-            $this->Template->lastname   = \Contao\Input::post('lastname');
+        if (\Contao\Input::post('importFile')) {
+            $this->Template->firstname  = \Contao\Input::post('importFile');
         }
     }
 }
