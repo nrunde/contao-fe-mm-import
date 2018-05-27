@@ -1,2 +1,2 @@
 <?php
-$GLOBALS['TL_HOOKS']['processFormData'][] = array('FeMmImport','importFile');
+$GLOBALS['TL_HOOKS']['processFormData'][] = array('Ulpr\ContaoFeMmImport\FeMmImport','importFile');
