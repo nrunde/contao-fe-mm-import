@@ -1,5 +1,5 @@
 <?php
-namespace Ulpr\ContaoFeMmImportBundle;
+namespace Ulpr\ContaoFeMmImport;
 
 use Contao\CoreBundle\Exception\InternalServerErrorException;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
