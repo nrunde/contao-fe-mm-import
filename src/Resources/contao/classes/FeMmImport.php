@@ -1,7 +1,10 @@
 <?php
-namespace Ulpr\ContaoFeMmImportBundle\classes\contao\elements;
+namespace Ulpr\ContaoFeMmImportBundle;
 
-class FeMmImport extends \ContentElement
+use Contao\CoreBundle\Exception\InternalServerErrorException;
+use Symfony\Component\HttpFoundation\Session\SessionInterface;
+
+class FeMmImport extends Backend
 {
     /**
      * Template
@@ -32,7 +35,7 @@ class FeMmImport extends \ContentElement
     /**
      * Erzeugt die Ausgebe für das Frontend.
      */
-    protected function genFeOutput()
+    protected function importFile()
     {
         if (\Contao\Input::post('importFile')) {
             $this->Template->firstname  = \Contao\Input::post('importFile');
